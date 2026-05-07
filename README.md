@@ -1,5 +1,5 @@
 # Ex01 Portfolio
-## Date: 23.04.2026
+## Date: 07.05.2026
 
 ## AIM
 To create a Portfolio using HTML and CSS.
@@ -53,209 +53,297 @@ Upload to GitHub Pages for free hosting.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shasmithaa | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shasmithaa Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1 class="logo">Shasmithaa</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#tech">Tech</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <img src="photo.jpeg" alt="Profile Image">
-    <h2>Hello, I am <span>Shasmithaa</span></h2>
-    <p>Designer | Full Stack Developer</p>
-    <p>2nd Year CSE Student</p>
-  </section>
-
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-  I am a 2nd-year Computer Science and Engineering (CSE) student with a strong interest in full-stack development. 
-  I enjoy learning modern technologies and building clean, user-friendly web applications. 
-  I am also passionate about problem solving and continuously improving my technical skills.
-  </p>
-      
     
-  </section>
+    <nav>
+        <h2 class="logo">Portfolio</h2>
 
-  <section id="skills" class="section">
-    <h2>Skills</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <div class="box">
-      <h3>Design</h3>
-      <div class="items">
-        <span>UI/UX</span>
-        <span>Canva</span>
-        <span>Figma</span>
-      </div>
-    </div>
 
-    <div class="box">
-      <h3>Frontend</h3>
-      <div class="items">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>React</span>
-      </div>
-    </div>
+    <section id="home" class="home">
 
-    <div class="box">
-      <h3>Backend</h3>
-      <div class="items">
-        <span>Node.js</span>
-        <span>Express</span>
-        <span>REST API</span>
-      </div>
-    </div>
-  </section>
+        <h1>Hi, I'm <span>SHASMITHAA</span></h1>
 
-  <section id="tech" class="section">
-    <h2>Tech Stack</h2>
-    <div class="items">
-      <span>MongoDB</span>
-      <span>SQL</span>
-      <span>Git & GitHub</span>
-      <span>DSA</span>
-      <span>Cloud Basics</span>
-    </div>
-  </section>
+        <p class="regno">212224040311</p>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: shasmithaasankar@gmail.com</p>
-    <p>Location: Chennai, India</p>
-  </section>
+        <p class="dept">CSE Student | Web Developer</p>
 
-  <footer>
-    <p>© 2026 Shasmithaa | Built with HTML & CSS</p>
-  </footer>
+        <button>View My Work</button>
+
+    </section>
+
+    
+    <section id="about" class="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            Hello! I’m <strong>Shasmithaa</strong>, a passionate Computer Science
+            Engineering student with a strong interest in web development and
+            programming.
+        </p>
+
+        <p>
+            I enjoy creating modern, responsive, and user-friendly websites
+            using HTML, CSS, and JavaScript. I love learning new technologies
+            and improving my coding skills through projects.
+        </p>
+
+        <p>
+            My goal is to become a successful full-stack developer and build
+            innovative applications that solve real-world problems.
+        </p>
+
+    </section>
+
+
+    <section id="skills" class="skills">
+
+        <h2>My Skills</h2>
+
+        <ul>
+            <li><strong>HTML</strong></li>
+            <li><strong>CSS</strong></li>
+            <li><strong>JavaScript</strong></li>
+            <li><strong>Python</strong></li>
+            <li><strong>C Programming</strong></li>
+        </ul>
+
+    </section>
+
+    
+    <section id="projects" class="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project-box">Portfolio Website</div>
+
+        <div class="project-box">Student Management System</div>
+
+        <div class="project-box">Simple Calculator</div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>Email: shasmithaa@gmail.com</p>
+
+        <p>Github: shasmithaa.github.io</p>
+
+        <p>Phone: 9876543210</p>
+
+    </section>
+
+    
+    <footer>
+        <p>© 2026 Shasmithaa | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
 ```
 ## CSS
 ```
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", "Segoe UI", sans-serif;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif;
 }
 
-body {
-  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
-  color: #2b2b2b;
-  scroll-behavior: smooth;
+
+body{
+    background:#f3e8ff;
+    color:#2d033b;
 }
 
-/* HEADER */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 10%;
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
+
+nav{
+    background:#4b0082;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    position:sticky;
+    top:0;
 }
 
-.logo {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #1e90ff;
+.logo{
+    font-size:28px;
+    font-weight:bold;
 }
 
-nav a {
-  margin-left: 18px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
+nav ul{
+    list-style:none;
+    display:flex;
 }
 
-nav a:hover {
-  color: #1e90ff;
+nav ul li{
+    margin-left:25px;
 }
 
-/* HERO */
-.hero {
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:0.3s;
 }
 
-.hero img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid white;
-  margin-bottom: 20px;
+nav ul li a:hover{
+    color:#d8b4fe;
 }
 
-.hero h2 span {
-  color: #1e90ff;
+
+.home{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(to right,#4b0082,#c084fc);
+    color:white;
 }
 
-/* SECTIONS */
-.section {
-  padding: 70px 10%;
-  text-align: center;
+.home h1{
+    font-size:50px;
+    margin-bottom:15px;
 }
 
-.section h2 {
-  color: #1e90ff;
-  margin-bottom: 20px;
+.home span{
+    color:#ffe066;
 }
 
-.box {
-  background: rgba(255,255,255,0.35);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  border-radius: 20px;
-  margin-bottom: 20px;
+.regno{
+    font-size:22px;
+    margin-bottom:10px;
 }
 
-.items {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
+.dept{
+    font-size:24px;
 }
 
-.items span {
-  background: white;
-  padding: 8px 16px;
-  border-radius: 50px;
+.home button{
+    margin-top:25px;
+    padding:12px 25px;
+    border:none;
+    background:white;
+    color:#4b0082;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
 }
 
-footer {
-  text-align: center;
-  padding: 15px;
-  background: rgba(255,255,255,0.3);
+.home button:hover{
+    background:#e9d5ff;
+}
+
+
+section{
+    padding:60px;
+    text-align:center;
+}
+
+section h2{
+    font-size:36px;
+    margin-bottom:25px;
+    color:#4b0082;
+}
+
+
+.about p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+
+.skills ul{
+    list-style:none;
+}
+
+.skills li{
+    background:#d8b4fe;
+    margin:15px auto;
+    padding:15px;
+    width:250px;
+    border-radius:10px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.skills li:hover{
+    background:#a855f7;
+    color:white;
+}
+
+
+.projects{
+    background:#faf5ff;
+}
+
+.project-box{
+    background:#c084fc;
+    color:white;
+    padding:25px;
+    margin:15px;
+    display:inline-block;
+    border-radius:12px;
+    font-size:20px;
+    transition:0.3s;
+}
+
+.project-box:hover{
+    transform:scale(1.05);
+    background:#7e22ce;
+}
+
+.contact{
+    background:#4b0082;
+    color:white;
+}
+
+.contact p{
+    margin:12px;
+    font-size:18px;
+}
+
+
+footer{
+    background:#2d033b;
+    color:white;
+    text-align:center;
+    padding:15px;
 }
 ```
 
 
 
 ## OUTPUT
-<img width="1919" height="1022" alt="image" src="https://github.com/user-attachments/assets/7d78ec08-b457-43e5-99dd-5c285597a609" />
-<img width="1919" height="1009" alt="image" src="https://github.com/user-attachments/assets/604e0b49-f64d-4ac7-a97c-27ae8d11b50d" />
-<img width="1916" height="1024" alt="image" src="https://github.com/user-attachments/assets/de263a8e-8711-4d32-b193-df5f3da48dc7" />
+<img width="1917" height="1017" alt="image" src="https://github.com/user-attachments/assets/3b713fd5-e5b7-451c-9f58-d7599e80dd1b" />
+<img width="1918" height="1020" alt="image" src="https://github.com/user-attachments/assets/1d3daad2-599c-4fbc-af07-5f8e03c594ba" />
+<img width="1918" height="1012" alt="image" src="https://github.com/user-attachments/assets/b883529b-8f62-43d2-a227-9fa767a55fc9" />
+
 
 
 
